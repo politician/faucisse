@@ -13,24 +13,24 @@ This document provides detailed instructions for developing the Faucisse website
 ### Setup
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/faucisse.com.git
    cd faucisse.com
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
 
 3. Start the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
    # or
    yarn dev
-   \`\`\`
+   ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
@@ -47,7 +47,7 @@ This document provides detailed instructions for developing the Faucisse website
 
 Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
 
-\`\`\`
+```
 feat: add new recipe
 fix: correct typo in manifesto
 docs: update README
@@ -55,7 +55,7 @@ style: format code
 refactor: reorganize component structure
 test: add tests for recipe component
 chore: update dependencies
-\`\`\`
+```
 
 ## Adding New Features
 
@@ -90,11 +90,11 @@ Use tools like Lighthouse and axe to check for accessibility issues.
 
 ## Building for Production
 
-\`\`\`bash
+```bash
 npm run build
 # or
 yarn build
-\`\`\`
+```
 
 This will create an optimized production build in the `.next` directory.
 

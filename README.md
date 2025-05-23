@@ -2,8 +2,8 @@
 
 *La révolution végétale des saucisses*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/iromains-projects/v0-faucisse)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/E228WavTG5d)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://www.faucisse.com)
+[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/faucisse-com-PYH4Mak9LgR)
 
 ## Overview
 
@@ -31,34 +31,34 @@ Visit the live site at: [https://faucisse.com](https://faucisse.com)
 ### Installation
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/faucisse.com.git
    cd faucisse.com
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
 
 3. Start the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
    # or
    yarn dev
-   \`\`\`
+   ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Building for Production
 
-\`\`\`bash
+```bash
 npm run build
 # or
 yarn build
-\`\`\`
+```
 
 ## Deployment
 
