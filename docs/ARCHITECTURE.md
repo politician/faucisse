@@ -11,7 +11,7 @@ This document provides an overview of the Faucisse website architecture, explain
 
 ## Project Structure
 
-\`\`\`
+```
 faucisse.com/
 ├── app/                  # Next.js App Router
 │   ├── globals.css       # Global styles
@@ -29,7 +29,7 @@ faucisse.com/
 │   ├── icons/            # Favicon and app icons
 │   └── images/           # Images used throughout the site
 └── docs/                 # Documentation
-\`\`\`
+```
 
 ## Key Components
 

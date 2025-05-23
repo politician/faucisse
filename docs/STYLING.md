@@ -65,11 +65,11 @@ The site is designed to be fully responsive, with breakpoints at:
 
 Use Tailwind's responsive prefixes to apply different styles at different screen sizes:
 
-\`\`\`jsx
+```jsx
 <div className="text-lg md:text-xl lg:text-2xl">
   Responsive text
 </div>
-\`\`\`
+```
 
 ## Component Styling
 

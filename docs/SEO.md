@@ -31,13 +31,13 @@ Base metadata is defined in `lib/metadata.ts` and includes:
 
 Each page can override or extend the base metadata:
 
-\`\`\`typescript
+```typescript
 export const metadata: Metadata = {
   title: "Page Title",
   description: "Page-specific description",
   // Other metadata
 }
-\`\`\`
+```
 
 ## Structured Data
 
@@ -49,7 +49,7 @@ Structured data is implemented using JSON-LD for:
 
 Example from a recipe page:
 
-\`\`\`typescript
+```typescript
 <Script
   id="schema-recipe"
   type="application/ld+json"
@@ -62,7 +62,7 @@ Example from a recipe page:
     }),
   }}
 />
-\`\`\`
+```
 
 ## XML Sitemap
 
