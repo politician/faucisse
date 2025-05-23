@@ -79,22 +79,21 @@ Lors de l'ajout de nouvelles pages, mettez à jour le plan de site en conséquen
 
 Le fichier robots.txt est situé à `public/robots.txt` et permet à tous les crawlers d'accéder à toutes les pages.
 
-## Analyse du trafic
+## Analyse du trafic et des performances
 
-Le site utilise Google Analytics (GA4) pour suivre et analyser le trafic des utilisateurs :
+Le site utilise deux services d'analyse complémentaires :
 
-- Le code de suivi est implémenté dans `app/layout.tsx` en utilisant le composant `Script` de Next.js
-- L'ID de mesure est `G-45RSBY4E1L`
-- Le script est chargé avec la stratégie `afterInteractive` pour optimiser les performances
+### Google Analytics (GA4)
+- Suivi comportemental détaillé des utilisateurs
+- ID de mesure : `G-45RSBY4E1L`
+- Implémenté dans `app/layout.tsx`
 
-Pour accéder aux données d'analyse :
-1. Connectez-vous à [Google Analytics](https://analytics.google.com/)
-2. Sélectionnez la propriété "Faucisse"
-3. Consultez les rapports dans le tableau de bord
+### Vercel Analytics
+- Métriques de performance et Core Web Vitals
+- Intégration native avec Vercel
+- Données sans cookies, respectueuses de la vie privée
 
-### Respect de la vie privée
-
-Assurez-vous que la politique de confidentialité du site mentionne l'utilisation de Google Analytics et explique comment les utilisateurs peuvent désactiver le suivi s'ils le souhaitent.
+Pour plus de détails, consultez le [Guide d'analyse](ANALYTICS.md).
 
 ## Optimisation des images
 
@@ -112,6 +111,7 @@ Une bonne performance est essentielle pour le SEO. Le site implémente :
 - Images optimisées
 - JavaScript minimal
 - CSS efficace avec Tailwind
+- Surveillance continue via Vercel Analytics
 
 ## Liste de vérification SEO pour le nouveau contenu
 
@@ -124,3 +124,4 @@ Lors de l'ajout de nouveau contenu :
 5. Mettre à jour le plan de site si vous ajoutez de nouvelles pages
 6. Assurer une bonne performance
 7. Tester la responsivité mobile
+8. Vérifier les Core Web Vitals dans Vercel Analytics

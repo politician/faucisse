@@ -4,6 +4,8 @@ import type { Metadata } from "next"
 import { Fredoka } from "next/font/google"
 import { baseMetadata } from "@/lib/metadata"
 import Script from "next/script"
+import { Analytics } from "@vercel/analytics/react"
+import { Suspense } from "react"
 
 // Properly configure the Fredoka font with sorted weight values
 const fredoka = Fredoka({
@@ -41,7 +43,10 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${fredoka.variable}`}>{children}</body>
+      <body className={`${fredoka.variable}`}>
+        <Suspense fallback={null}>{children}</Suspense>
+        <Analytics />
+      </body>
     </html>
   )
 }
