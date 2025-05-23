@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Faucisse - La révolution végétale",
+    name: "Faucisse - La révolution végétale des saucisses",
     short_name: "Faucisse",
-    description: "Découvrez Faucisse, la saucisses 100% végétales, fun et engagée.",
+    description: "Découvrez la faucisse, une saucisse 100% végétale, fun et engagée. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

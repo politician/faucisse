@@ -13,9 +13,9 @@ const fredoka = Fredoka({
 })
 
 export const metadata: Metadata = {
-  title: "Faucisse - La révolution végétale des saucisses vegan",
+  title: "Faucisse - La révolution végétale des saucisses",
   description:
-    "Découvrez Faucisse, la marque de saucisses 100% végétales, fun et engagées. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
+    "Découvrez la faucisse, une saucisse 100% végétale, fun et engagée. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
   keywords: ["faucisse", "saucisse végétale", "vegan", "végétarien", "recettes végétales", "alimentation durable"],
   authors: [{ name: "Faucisse" }],
   creator: "Faucisse",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://faucisse.com",
-    title: "Faucisse - La révolution végétale des saucisses vegan",
+    title: "Faucisse - La révolution végétale des saucisses",
     description:
-      "Découvrez Faucisse, la marque de saucisses 100% végétales, fun et engagées. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
+      "Découvrez la faucisse, une saucisse 100% végétale, fun et engagée. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
     siteName: "Faucisse",
     images: [
       {
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faucisse - La révolution végétale des saucisses vegan",
+    title: "Faucisse - La révolution végétale des saucisses",
     description:
-      "Découvrez Faucisse, la marque de saucisses 100% végétales, fun et engagées. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
+      "Découvrez la faucisse, une saucisse 100% végétale, fun et engagée. Des recettes savoureuses et éthiques pour tous les amateurs de bonne cuisine.",
     images: ["/og-image.png"],
   },
   viewport: {
