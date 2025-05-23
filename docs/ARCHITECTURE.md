@@ -1,6 +1,6 @@
 # Faucisse Architecture
 
-This document provides an overview of the Faucisse website architecture, explaining the key components and how they interact.
+Ce document fournit un aperçu de l'architecture du site web Faucisse, expliquant les composants clés et comment ils interagissent.
 
 ## Technology Stack
 
@@ -14,20 +14,20 @@ This document provides an overview of the Faucisse website architecture, explain
 ```
 faucisse.com/
 ├── app/                  # Next.js App Router
-│   ├── globals.css       # Global styles
-│   ├── layout.tsx        # Root layout component
-│   ├── manifest.ts       # PWA manifest
-│   ├── page.tsx          # Homepage
-│   ├── manifeste/        # Manifesto page
-│   ├── recettes/         # Recipes section
-│   └── not-found.tsx     # 404 page
-├── components/           # Reusable React components
-├── lib/                  # Utility functions and data
-│   ├── metadata.ts       # SEO metadata configuration
-│   └── recipes.ts        # Recipe data
-├── public/               # Static assets
-│   ├── icons/            # Favicon and app icons
-│   └── images/           # Images used throughout the site
+│   ├── globals.css       # Styles globaux
+│   ├── layout.tsx        # Composant de layout racine
+│   ├── manifest.ts       # Manifeste PWA
+│   ├── page.tsx          # Page d'accueil
+│   ├── manifeste/        # Page manifeste
+│   ├── recettes/         # Section recettes
+│   └── not-found.tsx     # Page 404
+├── components/           # Composants React réutilisables
+├── lib/                  # Fonctions utilitaires et données
+│   ├── metadata.ts       # Configuration des métadonnées SEO
+│   └── recipes.ts        # Données des recettes
+├── public/               # Assets statiques
+│   ├── icons/            # Favicon et icônes d'app
+│   └── images/           # Images utilisées dans le site
 └── docs/                 # Documentation
 ```
 
@@ -35,50 +35,50 @@ faucisse.com/
 
 ### App Router
 
-The project uses Next.js App Router for routing. Each route is defined by a directory in the `app` folder with a `page.tsx` file.
+Le projet utilise Next.js App Router pour le routage. Chaque route est définie par un répertoire dans le dossier `app` avec un fichier `page.tsx`.
 
 ### Page Layout
 
-The `PageLayout` component in `components/page-layout.tsx` provides a consistent layout across all pages, including:
-- The navigation bar
-- The background pattern
-- The footer
+Le composant `PageLayout` dans `components/page-layout.tsx` fournit un layout cohérent sur toutes les pages, incluant :
+- La barre de navigation
+- Le motif d'arrière-plan
+- Le pied de page
 
 ### Data Management
 
-Recipe data is centralized in `lib/recipes.ts` to avoid duplication and make updates easier.
+Les données des recettes sont centralisées dans `lib/recipes.ts` pour éviter la duplication et faciliter les mises à jour.
 
 ### SEO
 
-SEO metadata is managed through:
-- Base metadata in `lib/metadata.ts`
-- Page-specific metadata in each page file
-- Structured data using JSON-LD for recipes
+Les métadonnées SEO sont gérées via :
+- Métadonnées de base dans `lib/metadata.ts`
+- Métadonnées spécifiques à chaque page dans chaque fichier de page
+- Données structurées utilisant JSON-LD pour les recettes
 
 ### Styling
 
-The project uses Tailwind CSS with:
-- Custom colors defined in `tailwind.config.ts`
-- Global styles in `app/globals.css`
-- Custom animations for interactive elements
+Le projet utilise Tailwind CSS avec :
+- Couleurs personnalisées définies dans `tailwind.config.ts`
+- Styles globaux dans `app/globals.css`
+- Animations personnalisées pour les éléments interactifs
 
 ## Data Flow
 
-1. Static data (recipes, metadata) is defined in the `lib` directory
-2. Components import this data as needed
-3. Pages compose components to create the full UI
-4. The App Router handles navigation between pages
+1. Les données statiques (recettes, métadonnées) sont définies dans le répertoire `lib`
+2. Les composants importent ces données selon leurs besoins
+3. Les pages composent les composants pour créer l'interface utilisateur complète
+4. L'App Router gère la navigation entre les pages
 
 ## Progressive Web App
 
-The site implements PWA features through:
-- Web app manifest in `app/manifest.ts` and `public/site.webmanifest`
-- Various icon sizes in the `public/icons` directory
-- Proper metadata for installation prompts
+Le site implémente les fonctionnalités PWA via :
+- Manifeste d'application web dans `app/manifest.ts` et `public/site.webmanifest`
+- Diverses tailles d'icônes dans le répertoire `public/icons`
+- Métadonnées appropriées pour les invites d'installation
 
 ## Performance Considerations
 
-- Images are optimized using Next.js Image component
-- Fonts are properly loaded with display swap
-- Critical CSS is inlined
-- Animations use hardware acceleration where possible
+- Les images sont optimisées en utilisant le composant Image de Next.js
+- Les polices sont chargées correctement avec display swap
+- Le CSS critique est inliné
+- Les animations utilisent l'accélération matérielle quand c'est possible

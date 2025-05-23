@@ -1,115 +1,115 @@
-# Development Guide
+# Guide de développement
 
-This document provides detailed instructions for developing the Faucisse website.
+Ce document fournit des instructions détaillées pour développer le site web Faucisse.
 
-## Development Environment
+## Environnement de développement
 
-### Requirements
+### Exigences
 
-- Node.js 18.x or higher
-- npm or yarn
+- Node.js 18.x ou supérieur
+- npm ou yarn
 - Git
 
-### Setup
+### Configuration
 
-1. Clone the repository:
+1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/your-username/faucisse.com.git
+   git clone https://github.com/votre-nom-utilisateur/faucisse.com.git
    cd faucisse.com
    ```
 
-2. Install dependencies:
+2. Installez les dépendances :
    ```bash
    npm install
-   # or
+   # ou
    yarn install
    ```
 
-3. Start the development server:
+3. Démarrez le serveur de développement :
    ```bash
    npm run dev
-   # or
+   # ou
    yarn dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-## Development Workflow
+## Workflow de développement
 
-### Branch Strategy
+### Stratégie de branches
 
-- `main`: Production-ready code
-- `develop`: Integration branch for features
-- Feature branches: Named as `feature/feature-name`
-- Bug fix branches: Named as `fix/bug-name`
+- `main` : Code prêt pour la production
+- `develop` : Branche d'intégration pour les fonctionnalités
+- Branches de fonctionnalités : Nommées comme `feature/nom-fonctionnalite`
+- Branches de correction de bugs : Nommées comme `fix/nom-bug`
 
-### Commit Messages
+### Messages de commit
 
-Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+Suivez la spécification [Conventional Commits](https://www.conventionalcommits.org/) :
 
 ```
-feat: add new recipe
-fix: correct typo in manifesto
-docs: update README
-style: format code
-refactor: reorganize component structure
-test: add tests for recipe component
-chore: update dependencies
+feat: ajouter nouvelle recette
+fix: corriger faute de frappe dans le manifeste
+docs: mettre à jour README
+style: formater le code
+refactor: réorganiser la structure des composants
+test: ajouter tests pour le composant recette
+chore: mettre à jour les dépendances
 ```
 
-## Adding New Features
+## Ajout de nouvelles fonctionnalités
 
-### Adding a New Recipe
+### Ajouter une nouvelle recette
 
-1. Add the recipe image to `public/images/recipes/`
-2. Add the recipe data to the `recipes` array in `lib/recipes.ts`
-3. The recipe will automatically appear in the recipes list and have its own page
+1. Ajoutez l'image de la recette dans `public/images/recipes/`
+2. Ajoutez les données de la recette au tableau `recipes` dans `lib/recipes.ts`
+3. La recette apparaîtra automatiquement dans la liste des recettes et aura sa propre page
 
-### Adding a New Page
+### Ajouter une nouvelle page
 
-1. Create a new directory in the `app` folder
-2. Add a `page.tsx` file with the page content
-3. Use the `PageLayout` component for consistent styling
-4. Add metadata for SEO
+1. Créez un nouveau répertoire dans le dossier `app`
+2. Ajoutez un fichier `page.tsx` avec le contenu de la page
+3. Utilisez le composant `PageLayout` pour un style cohérent
+4. Ajoutez des métadonnées pour le SEO
 
-### Modifying Styles
+### Modifier les styles
 
-1. Global styles are in `app/globals.css`
-2. Component-specific styles use Tailwind classes
-3. Custom colors and animations can be added to `tailwind.config.ts`
+1. Les styles globaux sont dans `app/globals.css`
+2. Les styles spécifiques aux composants utilisent les classes Tailwind
+3. Les couleurs et animations personnalisées peuvent être ajoutées à `tailwind.config.ts`
 
-## Testing
+## Tests
 
-### Manual Testing
+### Tests manuels
 
-Test the site on multiple devices and browsers to ensure responsiveness and compatibility.
+Testez le site sur plusieurs appareils et navigateurs pour assurer la responsivité et la compatibilité.
 
-### Accessibility Testing
+### Tests d'accessibilité
 
-Use tools like Lighthouse and axe to check for accessibility issues.
+Utilisez des outils comme Lighthouse et axe pour vérifier les problèmes d'accessibilité.
 
-## Building for Production
+## Construction pour la production
 
 ```bash
 npm run build
-# or
+# ou
 yarn build
 ```
 
-This will create an optimized production build in the `.next` directory.
+Cela créera une version de production optimisée dans le répertoire `.next`.
 
-## Deployment
+## Déploiement
 
-The site is automatically deployed to Vercel when changes are pushed to the main branch.
+Le site est automatiquement déployé sur Vercel lorsque les modifications sont poussées vers la branche principale.
 
-### Environment Variables
+### Variables d'environnement
 
-No environment variables are currently required for this project.
+Aucune variable d'environnement n'est actuellement requise pour ce projet.
 
-## Troubleshooting
+## Dépannage
 
-### Common Issues
+### Problèmes courants
 
-- **Images not loading**: Check that the image paths in `lib/recipes.ts` match the actual file paths in `public/images/recipes/`
-- **Styling issues**: Make sure Tailwind is properly configured and that the classes are correct
-- **Build errors**: Check for TypeScript errors or missing dependencies
+- **Images qui ne se chargent pas** : Vérifiez que les chemins d'images dans `lib/recipes.ts` correspondent aux chemins de fichiers réels dans `public/images/recipes/`
+- **Problèmes de style** : Assurez-vous que Tailwind est correctement configuré et que les classes sont correctes
+- **Erreurs de construction** : Vérifiez les erreurs TypeScript ou les dépendances manquantes

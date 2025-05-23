@@ -1,53 +1,53 @@
-# SEO Implementation Guide
+# Guide d'implémentation SEO
 
-This document explains how SEO is implemented in the Faucisse website and how to maintain good SEO practices when making changes.
+Ce document explique comment le SEO est implémenté dans le site web Faucisse et comment maintenir de bonnes pratiques SEO lors des modifications.
 
-## SEO Strategy
+## Stratégie SEO
 
-The Faucisse website implements a comprehensive SEO strategy including:
+Le site web Faucisse implémente une stratégie SEO complète incluant :
 
-1. Semantic HTML structure
-2. Proper metadata
-3. Structured data
-4. Performance optimization
-5. Mobile responsiveness
-6. XML sitemap
-7. Robots.txt configuration
+1. Structure HTML sémantique
+2. Métadonnées appropriées
+3. Données structurées
+4. Optimisation des performances
+5. Responsivité mobile
+6. Plan de site XML
+7. Configuration robots.txt
 
-## Metadata Implementation
+## Implémentation des métadonnées
 
-### Base Metadata
+### Métadonnées de base
 
-Base metadata is defined in `lib/metadata.ts` and includes:
+Les métadonnées de base sont définies dans `lib/metadata.ts` et incluent :
 
-- Title template
+- Modèle de titre
 - Description
-- Keywords
-- Open Graph data
-- Twitter card data
-- Favicon information
+- Mots-clés
+- Données Open Graph
+- Données Twitter Card
+- Informations de favicon
 
-### Page-Specific Metadata
+### Métadonnées spécifiques aux pages
 
-Each page can override or extend the base metadata:
+Chaque page peut remplacer ou étendre les métadonnées de base :
 
 ```typescript
 export const metadata: Metadata = {
-  title: "Page Title",
-  description: "Page-specific description",
-  // Other metadata
+  title: "Titre de la page",
+  description: "Description spécifique à la page",
+  // Autres métadonnées
 }
 ```
 
-## Structured Data
+## Données structurées
 
-Structured data is implemented using JSON-LD for:
+Les données structurées sont implémentées en utilisant JSON-LD pour :
 
-1. Organization information on the homepage
-2. Recipe data on recipe pages
-3. ItemList for the recipes listing page
+1. Informations d'organisation sur la page d'accueil
+2. Données de recettes sur les pages de recettes
+3. ItemList pour la page de liste des recettes
 
-Example from a recipe page:
+Exemple d'une page de recette :
 
 ```typescript
 <Script
@@ -58,52 +58,52 @@ Example from a recipe page:
       "@context": "https://schema.org",
       "@type": "Recipe",
       name: recipe.title,
-      // Other recipe data
+      // Autres données de recette
     }),
   }}
 />
 ```
 
-## XML Sitemap
+## Plan de site XML
 
-The sitemap is located at `public/sitemap.xml` and includes:
+Le plan de site est situé à `public/sitemap.xml` et inclut :
 
-- Homepage
-- Manifesto page
-- Recipes listing page
-- Individual recipe pages
+- Page d'accueil
+- Page manifeste
+- Page de liste des recettes
+- Pages individuelles de recettes
 
-When adding new pages, update the sitemap accordingly.
+Lors de l'ajout de nouvelles pages, mettez à jour le plan de site en conséquence.
 
 ## Robots.txt
 
-The robots.txt file is located at `public/robots.txt` and allows all crawlers to access all pages.
+Le fichier robots.txt est situé à `public/robots.txt` et permet à tous les crawlers d'accéder à toutes les pages.
 
-## Image Optimization
+## Optimisation des images
 
-Images are optimized using Next.js Image component with:
+Les images sont optimisées en utilisant le composant Image de Next.js avec :
 
-- Proper `alt` text
-- Responsive sizing with `sizes` attribute
-- Priority loading for above-the-fold images
+- Texte `alt` approprié
+- Dimensionnement responsive avec l'attribut `sizes`
+- Chargement prioritaire pour les images above-the-fold
 
-## Performance Considerations
+## Considérations de performance
 
-Good performance is essential for SEO. The site implements:
+Une bonne performance est essentielle pour le SEO. Le site implémente :
 
-- Efficient loading of fonts
-- Optimized images
-- Minimal JavaScript
-- Efficient CSS with Tailwind
+- Chargement efficace des polices
+- Images optimisées
+- JavaScript minimal
+- CSS efficace avec Tailwind
 
-## SEO Checklist for New Content
+## Liste de vérification SEO pour le nouveau contenu
 
-When adding new content:
+Lors de l'ajout de nouveau contenu :
 
-1. Add proper metadata
-2. Use semantic HTML
-3. Include structured data where appropriate
-4. Optimize images
-5. Update the sitemap if adding new pages
-6. Ensure good performance
-7. Test mobile responsiveness
+1. Ajouter des métadonnées appropriées
+2. Utiliser du HTML sémantique
+3. Inclure des données structurées le cas échéant
+4. Optimiser les images
+5. Mettre à jour le plan de site si vous ajoutez de nouvelles pages
+6. Assurer une bonne performance
+7. Tester la responsivité mobile

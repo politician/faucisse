@@ -1,29 +1,29 @@
-# Contributing to Faucisse
+# Contribuer à Faucisse
 
-Thank you for your interest in contributing to the Faucisse project! This document provides guidelines and instructions for contributing.
+Merci de votre intérêt pour contribuer au projet Faucisse ! Ce document fournit des directives et instructions pour contribuer.
 
-## Code of Conduct
+## Code de conduite
 
-Please be respectful and considerate of others when contributing to this project. We aim to foster an inclusive and welcoming community.
+Veuillez être respectueux et bienveillant envers les autres lors de vos contributions à ce projet. Nous visons à favoriser une communauté inclusive et accueillante.
 
-## How to Contribute
+## Comment contribuer
 
-1. Fork the repository
-2. Create a new branch for your feature or bugfix
-3. Make your changes
-4. Submit a pull request
+1. Forkez le dépôt
+2. Créez une nouvelle branche pour votre fonctionnalité ou correction de bug
+3. Effectuez vos modifications
+4. Soumettez une pull request
 
-## Pull Request Process
+## Processus de pull request
 
-1. Ensure your code follows the project's coding standards
-2. Update the documentation if necessary
-3. Test your changes thoroughly
-4. Submit your pull request with a clear description of the changes
+1. Assurez-vous que votre code suit les standards de codage du projet
+2. Mettez à jour la documentation si nécessaire
+3. Testez vos modifications de manière approfondie
+4. Soumettez votre pull request avec une description claire des modifications
 
-## Coding Standards
+## Standards de codage
 
-- Follow the existing code style
-- Use meaningful variable and function names
-- Write comments for complex logic
-- Keep functions small and focused
-- Use TypeScript types appropriately
+- Suivez le style de code existant
+- Utilisez des noms de variables et de fonctions significatifs
+- Écrivez des commentaires pour la logique complexe
+- Gardez les fonctions petites et focalisées
+- Utilisez les types TypeScript de manière appropriée

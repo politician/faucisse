@@ -2,72 +2,68 @@
 
 *La révolution végétale des saucisses*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://www.faucisse.com)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/faucisse-com-PYH4Mak9LgR)
+[![Déployé sur Vercel](https://img.shields.io/badge/Déployé%20sur-Vercel-black?style=for-the-badge&logo=vercel)](https://www.faucisse.com)
+[![Construit avec v0](https://img.shields.io/badge/Construit%20avec-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/faucisse-com-PYH4Mak9LgR)
 
-## Overview
+## Site en ligne
 
-Faucisse is a playful and engaging website for a fictional vegan sausage brand. The site features a fun, non-technical aesthetic with bright colors, rounded fonts, and floating elements. It includes a landing page, manifesto, and recipe section.
+Visitez le site en ligne : [https://faucisse.com](https://faucisse.com)
 
-## Live Site
+## Fonctionnalités
 
-Visit the live site at: [https://faucisse.com](https://faucisse.com)
+- Design responsive pour toutes les tailles d'écran
+- Collection de recettes avec instructions détaillées
+- Animations ludiques et éléments visuels
+- Contenu optimisé pour le SEO
+- Capacités d'application web progressive
 
-## Features
+## Démarrage
 
-- Responsive design for all device sizes
-- Recipe collection with detailed instructions
-- Playful animations and visual elements
-- SEO optimized content
-- Progressive Web App capabilities
+### Prérequis
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18.x or higher
-- npm or yarn
+- Node.js 18.x ou supérieur
+- npm ou yarn
 
 ### Installation
 
-1. Clone the repository:
+1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/your-username/faucisse.com.git
+   git clone https://github.com/votre-nom-utilisateur/faucisse.com.git
    cd faucisse.com
    ```
 
-2. Install dependencies:
+2. Installez les dépendances :
    ```bash
    npm install
-   # or
+   # ou
    yarn install
    ```
 
-3. Start the development server:
+3. Démarrez le serveur de développement :
    ```bash
    npm run dev
-   # or
+   # ou
    yarn dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-## Building for Production
+## Construction pour la production
 
 ```bash
 npm run build
-# or
+# ou
 yarn build
 ```
 
-## Deployment
+## Déploiement
 
-The site is automatically deployed to Vercel when changes are pushed to the main branch.
+Le site est automatiquement déployé sur Vercel lorsque les modifications sont poussées vers la branche principale.
 
-## Contributing
+## Contribution
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+Veuillez lire [CONTRIBUTING.md](CONTRIBUTING.md) pour les détails sur notre code de conduite et le processus de soumission des pull requests.
 
-## License
+## Licence
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
