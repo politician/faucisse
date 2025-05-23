@@ -31,13 +31,13 @@ Les métadonnées de base sont définies dans `lib/metadata.ts` et incluent :
 
 Chaque page peut remplacer ou étendre les métadonnées de base :
 
-```typescript
+\`\`\`typescript
 export const metadata: Metadata = {
   title: "Titre de la page",
   description: "Description spécifique à la page",
   // Autres métadonnées
 }
-```
+\`\`\`
 
 ## Données structurées
 
@@ -49,7 +49,7 @@ Les données structurées sont implémentées en utilisant JSON-LD pour :
 
 Exemple d'une page de recette :
 
-```typescript
+\`\`\`typescript
 <Script
   id="schema-recipe"
   type="application/ld+json"
@@ -62,7 +62,7 @@ Exemple d'une page de recette :
     }),
   }}
 />
-```
+\`\`\`
 
 ## Plan de site XML
 
@@ -78,6 +78,23 @@ Lors de l'ajout de nouvelles pages, mettez à jour le plan de site en conséquen
 ## Robots.txt
 
 Le fichier robots.txt est situé à `public/robots.txt` et permet à tous les crawlers d'accéder à toutes les pages.
+
+## Analyse du trafic
+
+Le site utilise Google Analytics (GA4) pour suivre et analyser le trafic des utilisateurs :
+
+- Le code de suivi est implémenté dans `app/layout.tsx` en utilisant le composant `Script` de Next.js
+- L'ID de mesure est `G-45RSBY4E1L`
+- Le script est chargé avec la stratégie `afterInteractive` pour optimiser les performances
+
+Pour accéder aux données d'analyse :
+1. Connectez-vous à [Google Analytics](https://analytics.google.com/)
+2. Sélectionnez la propriété "Faucisse"
+3. Consultez les rapports dans le tableau de bord
+
+### Respect de la vie privée
+
+Assurez-vous que la politique de confidentialité du site mentionne l'utilisation de Google Analytics et explique comment les utilisateurs peuvent désactiver le suivi s'ils le souhaitent.
 
 ## Optimisation des images
 
