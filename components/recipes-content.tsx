@@ -1,45 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-
-// Recipe data
-const recipes = [
-  {
-    id: "faucisses-curry-pommes",
-    title: "Faucisses au curry et pommes rôties",
-    prepTime: "15 min",
-    description:
-      "Des faucisses dorées au four, accompagnées de quartiers de pommes caramélisées et d'un soupçon de curry. Oui, c'est sucré-salé, et oui, c'est incroyable.",
-    image: "/faucisses-au-curry-et-pommes-roties.png",
-  },
-  {
-    id: "faucisses-legumes-moutarde",
-    title: "Faucisses et légumes rôtis à la moutarde",
-    prepTime: "20 min",
-    description: "Un plat tout-en-un, savoureux et sans vaisselle. Le four fait tout, toi tu te la coules douce.",
-    image: "/faucisses-et-legumes-rotis-moutarde.png",
-  },
-  {
-    id: "faucisses-italienne",
-    title: "Faucisses à l'italienne sur plaque",
-    prepTime: "10 min",
-    description: "Des faucisses grillées avec poivrons et oignons. Goût d'Italie garanti, accent non inclus.",
-    image: "/faucisses-italienne-sur-plaque.png",
-  },
-  {
-    id: "faucisses-lentilles",
-    title: "Faucisses aux lentilles",
-    prepTime: "15 min",
-    description: "Des lentilles fondantes et des faucisses bien dorées. C'est rustique, c'est vegan, c'est validé.",
-    image: "/faucisses-aux-lentilles.png",
-  },
-  {
-    id: "faucisses-merguez",
-    title: "Faucisses façon merguez maison",
-    prepTime: "30 min",
-    description: "Des merguez végétales maison pour les barbecues qui font dire 'attends, c'est pas de la vraie ?'",
-    image: "/faucisses-merguez-maison.png",
-  },
-]
+import { recipes } from "@/lib/recipes"
 
 export function RecipesContent() {
   return (
